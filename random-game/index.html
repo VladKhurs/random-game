@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <title>Snake-game</title>
+</head>
+<body>
+    <canvas class="snake-field hide" width="608" height="608"></canvas>
+    <script src="./index.js"></script>
+
+    <div class="welcom-menu">
+        <img src="./assets/img/main-snake.png" alt="snake" width="120vw" class="main-snake">
+        <div class="welcone-text">
+            SNAKE GAME
+        </div>
+        <button class="start-btn btn">Play!</button>
+        <button class="records-btn btn">Records</button>
+    </div>
+
+    <div class="replay-menu hide">
+        <div class="score-info">Your score is: </div>
+        <div class="score-amount"></div>
+        <div class="play-wrap">
+            <button class="play-btn btn">Play!</button>
+        </div>
+        <div class="welcome-wrap">
+            <button class="play-to-welcome-btn btn">Main</button>
+        </div>
+    </div>
+
+    <div class="records-menu hide">
+        <div class="records-text">
+            Records table
+        </div>
+        <div class="records-table">
+            <table class="game-table first-table">
+                <tr>
+                    <td class="table-num first-num">1</td>
+                    <td class="table-record second-td first-res">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">2</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+
+                <tr>
+                    <td class="table-num">3</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">4</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">5</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+            </table>
+            <table class="game-table">
+                <tr>
+                    <td class="table-num">6</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">7</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+
+                <tr>
+                    <td class="table-num">8</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">9</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">10</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+            </table>
+        </div>
+        <button class="close-table btn">Close table</button>
+        <button class="play-again-btn btn">Play!</button>
+    </div>
+</body>
+</html>

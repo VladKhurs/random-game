@@ -1,0 +1,199 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+article > * + * {
+    margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+.snake-field {
+    display: block;
+    margin: 0 auto;
+}
+
+.replay-menu {
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 20%;
+    left: 35%;
+    width: 30vw;
+    height: 30vw;
+    background-color: rgb(234, 255, 210);
+    border-radius: 15px;
+}
+
+.welcom-menu {
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 20%;
+    left: 35%;
+    width: 30vw;
+    height: 30vw;
+    background-color: rgb(234, 255, 210);
+    border-radius: 15px;
+}
+
+.records-menu {
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 20%;
+    left: 35%;
+    width: 30vw;
+    height: 30vw;
+    background-color: rgb(234, 255, 210);
+    border-radius: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.records-table {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-table {
+    margin-right: 25px;
+}
+
+.table-record {
+    width: 50px;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 162),  rgb(255, 202, 161));
+}
+
+.table-num {
+    padding: 0 8px;
+    background-image: linear-gradient(to bottom right, rgb(255, 250, 162),  rgb(255, 161, 222));
+}
+
+.first-num {
+    background-image: linear-gradient(to bottom right, rgb(255, 106, 0),  rgb(255, 251, 0), rgb(255, 102, 0));
+}
+
+.first-res {
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 195),  rgb(255, 251, 0),  rgb(255, 251, 0), rgb(251, 0, 255));
+}
+
+.game-table{
+    border-collapse: collapse;
+    background-color: azure;
+}
+
+.btn {
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgb(255, 215, 162),  rgb(255, 161, 222));
+}
+
+.start-btn {
+    margin: 15px 0;
+}
+
+.main-snake {
+    position: absolute;
+    top: 10px;
+    z-index: -3;
+}
+
+.play-btn {
+    margin: 15px 0;
+}
+
+.score-amount {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.welcone-text {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.records-text {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.close-table {
+    margin: 20px 0 15px;
+}
+
+.score-info {
+    font-weight: 700;
+    font-size: 28px;
+}
