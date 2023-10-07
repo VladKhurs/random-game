@@ -22,7 +22,6 @@ addEventListener('DOMContentLoaded', (event) => {
     const topAud = new Audio()
     const downAud = new Audio()
     const deadAud = new Audio()
-
     const pix = 32
 
 
@@ -272,7 +271,8 @@ addEventListener('DOMContentLoaded', (event) => {
             gameContext.fillText("Record: ", 11 * pix, 1.65 * pix)
             gameContext.fillStyle = 'white'
             gameContext.font = '44px Arial one'
-            gameContext.fillText(takenResults[0], 15.8 * pix, 1.75 * pix)
+            
+            gameContext.fillText(takenResults[0] != undefined ? takenResults[0] : 0, 15.8 * pix, 1.75 * pix)
         }
     }
 })
