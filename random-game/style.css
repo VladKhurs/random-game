@@ -117,6 +117,41 @@ html {
     border-radius: 15px;
 }
 
+.levels-menu {
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 20%;
+    left: 35%;
+    width: 30vw;
+    height: 30vw;
+    background-color: rgb(234, 255, 210);
+    border-radius: 15px;
+}
+
+.games-mode-menu{
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 20%;
+    left: 35%;
+    width: 30vw;
+    height: 30vw;
+    background-color: rgb(234, 255, 210);
+    border-radius: 15px;
+}
+
+.levels-block {
+    display: flex;
+    flex-direction: row;
+}
+
 .hide {
     display: none;
 }
@@ -124,6 +159,14 @@ html {
 .records-table {
     display: flex;
     flex-direction: row;
+}
+
+.records-table td {
+    border: 4px solid rgb(234, 255, 210);
+}
+
+.play-btn {
+    margin: 10px 0 20px;
 }
 
 .first-table {
@@ -155,11 +198,31 @@ html {
 
 .btn {
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, rgb(255, 215, 162),  rgb(255, 161, 222));
+    background-color: rgb(255, 161, 222);
+    width: 130px;
+    cursor: pointer;
+    transition: all linear 0.4s;
+}
+
+.btn:hover {
+    background-color: rgb(255, 215, 162);
+}
+
+.btn-reverce {
+    border-radius: 10px;
+    
+    background-color: rgb(255, 215, 162);
+    width: 130px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.btn-reverce:hover {
+    background-color: rgb(255, 161, 222);
 }
 
 .start-btn {
-    margin: 15px 0;
+    margin: 10px 0 0 0;
 }
 
 .main-snake {
@@ -168,14 +231,11 @@ html {
     z-index: -3;
 }
 
-.play-btn {
-    margin: 15px 0;
-}
-
 .score-amount {
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 10px;
+    margin-left: 7px;
 }
 
 .welcone-text {
@@ -186,7 +246,26 @@ html {
 .records-text {
     font-weight: 700;
     font-size: 28px;
-    margin-bottom: 10px;
+}
+
+.level-text-now{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.text-levels-table {
+    margin-bottom: 15px;
+}
+
+.modes-text {
+    font-weight: 700;
+    font-size: 28px;
+
+}
+
+.level-info {
+    display: flex;
+    flex-direction: row;
 }
 
 .close-table {
@@ -196,4 +275,108 @@ html {
 .score-info {
     font-weight: 700;
     font-size: 28px;
+}
+
+.buttons {
+    margin: 20px;
+}
+
+.records-btn {
+    margin-right: 8px;
+}
+
+.levels-btn {
+    margin-left: 8px;
+}
+
+.level{
+    border: 3px solid #000;
+    width: 38px;
+    height: 38px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.levels-to-main-btn {
+    margin: 20px;
+}
+
+.mr {
+    margin-right: 8px;
+}
+
+.ml {
+    margin-left: 8px;
+}
+
+.game-modes-part{
+    margin: 20px;
+}
+
+.modes-to-welcome{
+    margin: 10px 0 20px;
+}
+
+.easy-mode{
+    background-color: aquamarine;
+}
+
+.normal-mode {
+    background-color: rgb(255, 242, 127);
+}
+
+.hard-mode {
+    background-color: rgb(255, 199, 199);
+}
+
+.pro-mode {
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255)
+}
+
+.mode-now {
+    box-shadow: 1px 1px 21px rgb(242, 0, 255);
+}
+
+.level-play-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-now-replay {
+    background-color: rgb(127, 255, 210);
+    width: 30px;
+    height: 30px;
+}
+
+.level-now {
+    background-color: rgb(127, 255, 210);
+}
+
+.level-passed {
+    background-color: rgb(255, 212, 127);
+}
+
+.level-play-text {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.level-now-replay {
+    font-weight: 700;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.score-block {
+    display: flex;
+    flex-direction: row;
 }
