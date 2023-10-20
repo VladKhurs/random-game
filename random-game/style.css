@@ -380,3 +380,32 @@ html {
     display: flex;
     flex-direction: row;
 }
+
+.footer {
+    background-image: linear-gradient(to bottom right, rgb(232, 222, 252),  rgb(230, 255, 255));
+    border-radius: 15px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 3px solid #1111;
+}
+
+.link  {
+    text-decoration: none;
+    transition: all .10s ease-in;
+    margin-right: 15px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
