@@ -1,8 +1,3 @@
-console.log("Всё ТЗ выполнено, самооценка: 70.")
-console.log("Дополнительный функционал:")
-console.log("1) система уровней (Levels);")
-console.log("2) возможность изменения сложности игры (Game Modes).")
-
 addEventListener('DOMContentLoaded', (event) => {
     const snakeField = document.querySelector('.snake-field')
     const gameContext = snakeField.getContext('2d')
@@ -33,8 +28,13 @@ addEventListener('DOMContentLoaded', (event) => {
 
     const modeBtns = document.querySelectorAll('.game-mode-btn')
 
-    let modeNow = 'normal'
+    const arrows = document.querySelector('.cont')
+    const arrTop = document.querySelector('.cont-t')
+    const arrBut = document.querySelector('.cont-b')
+    const arrLef = document.querySelector('.cont-l')
+    const arrRig = document.querySelector('.cont-r')
 
+    let modeNow = 'normal'
     const modesArr = [129, 100, 60, 40]
     let modeFrames = modesArr[1]
     const modesNamesArr = ['easy', 'normal', 'hard', 'pro']
@@ -65,8 +65,6 @@ addEventListener('DOMContentLoaded', (event) => {
     const downAud = new Audio()
     const deadAud = new Audio()
     const pix = 32
-
-
 
     if(localStorage.getItem('localResults') === null){
         let scriptResults = []
@@ -183,6 +181,7 @@ addEventListener('DOMContentLoaded', (event) => {
     let showReplayMenu = () => {
         replayMenu.classList.toggle('hide')
         snakeField.classList.toggle('hide')
+        arrows.classList.toggle('hide')
         startNewGame()
     }
 
@@ -194,6 +193,7 @@ addEventListener('DOMContentLoaded', (event) => {
     let levelsToPlay = () => {
         levelsMenu.classList.toggle('hide')
         snakeField.classList.toggle('hide')
+        arrows.classList.toggle('hide')
         startNewGame()
     }
 
@@ -209,6 +209,7 @@ addEventListener('DOMContentLoaded', (event) => {
 
     let showGame = () => {
         snakeField.classList.toggle('hide')
+        arrows.classList.toggle('hide')
         welcomeMenu.classList.toggle('hide')
         startNewGame()
     }
@@ -222,6 +223,7 @@ addEventListener('DOMContentLoaded', (event) => {
     let showGameFromTable = () => {
         recordsMenu.classList.toggle('hide')
         snakeField.classList.toggle('hide')
+        arrows.classList.toggle('hide')
         startNewGame()
     }
 
@@ -238,12 +240,42 @@ addEventListener('DOMContentLoaded', (event) => {
     const modesToPlay = () => {
         modesMenu.classList.toggle('hide')
         snakeField.classList.toggle('hide')
+        arrows.classList.toggle('hide')
         startNewGame()
     }
 
     const WelcomeToMode = () => {
         welcomeMenu.classList.toggle('hide')
         modesMenu.classList.toggle('hide')
+    }
+
+
+    const topFunc = () => {
+        if(direction != 'down'){
+            direction = 'top'
+            downAud.play()
+        }
+    }
+
+    const butFunc = () => {
+        if(direction != 'top'){
+            direction = 'down'
+            downAud.play()
+        }
+    }
+
+    const lefFunc = () => {
+        if(direction != 'rigth'){
+            direction = 'left'
+            downAud.play()
+        }
+    }
+
+    const rigFunc = () => {
+        if(direction != 'left') {
+            direction = 'rigth'
+            topAud.play()
+        }
     }
 
     playBtn.addEventListener('click', showReplayMenu)
@@ -259,7 +291,10 @@ addEventListener('DOMContentLoaded', (event) => {
     modesToWelcomeBtn.addEventListener('click', modesToWelcome)
     WelcomeToModeBtn.addEventListener('click', WelcomeToMode)
 
-    
+    arrTop.addEventListener('click', topFunc)
+    arrBut.addEventListener('click', butFunc)
+    arrLef.addEventListener('click', lefFunc)
+    arrRig.addEventListener('click', rigFunc)
 
 
     document.addEventListener('keydown', (e) => {
@@ -370,6 +405,7 @@ addEventListener('DOMContentLoaded', (event) => {
                 clearInterval(game)
                 setTimeout(()=> {
                     snakeField.classList.toggle('hide')
+                    arrows.classList.toggle('hide')
                     replayMenu.classList.toggle('hide')
                 }, 250)
             }
