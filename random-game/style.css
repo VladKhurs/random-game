@@ -152,10 +152,6 @@ html {
     flex-direction: row;
 }
 
-.hide {
-    display: none;
-}
-
 .records-table {
     display: flex;
     flex-direction: row;
@@ -408,4 +404,58 @@ html {
     text-decoration: underline;
 }
 
+.cont {
+    
+    display: block;
+    margin-left: 35%;
+    width: 481px;
+    margin: 0 auto;
+    margin-top: 50px;
 
+}
+
+.arr {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    background-color: rgb(255, 215, 162);
+    transition: all linear 0.2s;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arr:hover {
+    background-color: rgb(255, 161, 222);
+}
+
+.cont-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-t {
+    margin-bottom: 30px;
+    margin-left: 166.5px;
+}
+
+.cont-l {
+    margin-right: 90px;
+    padding-right: 10px;
+}
+
+.cont-r {
+    margin-left: 90px;
+    padding-left: 10px;
+}
+
+.cont-b {
+    margin-top: 30px;
+    margin-left: 166.5px;
+    padding-top: 10px;
+}
+
+.hide {
+    display: none;
+}
