@@ -408,15 +408,15 @@ html {
     
     display: block;
     margin-left: 35%;
-    width: 481px;
+    width: 401px;
     margin: 0 auto;
     margin-top: 50px;
 
 }
 
 .arr {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     cursor: pointer;
     background-color: rgb(255, 215, 162);
     transition: all linear 0.2s;
@@ -436,24 +436,26 @@ html {
 }
 
 .cont-t {
-    margin-bottom: 30px;
-    margin-left: 166.5px;
-}
-
-.cont-l {
-    margin-right: 90px;
-    padding-right: 10px;
-}
-
-.cont-r {
-    margin-left: 90px;
-    padding-left: 10px;
+    margin-bottom: 25px;
+    margin-left: 140px;
 }
 
 .cont-b {
-    margin-top: 30px;
-    margin-left: 166.5px;
+    margin-top: 25px;
+    margin-left: 140px;
     padding-top: 10px;
+}
+
+.cont-l {
+    margin-right: 80px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.cont-r {
+    margin-left: 80px;
+    padding-left: 10px;
+    padding-right: 5px;
 }
 
 .hide {
