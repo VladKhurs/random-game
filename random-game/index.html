@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <title>Snake-game</title>
+</head>
+<body>
+
+    <canvas class="snake-field hide" width="608" height="608"></canvas>
+    <div class="cont hide">
+        <div class="cont-t arr">
+            <img src="./assets/img/Arrow_top.png" alt="" width="120" height="120">
+        </div>
+        <div class="cont-center">
+            <div class="cont-l arr">
+                <img src="./assets/img/Arrow-left.png" alt="" width="120" height="120">
+            </div>
+            <div class="cont-r arr">
+                <img src="./assets/img/Arrow-right.png" alt="" width="120" height="120">
+            </div>
+        </div>
+        <div class="cont-b arr">
+            <img src="./assets/img/Arrow_bottom.png" alt="" width="120" height="120">
+        </div>
+    </div>
+    <script src="./index.js"></script>
+
+    <div class="welcom-menu">
+        <img src="./assets/img/main-snake.png" alt="snake" width="120vw" class="main-snake">
+        <div class="welcone-text">
+            SNAKE GAME
+        </div>
+        <button class="start-btn btn">Play!</button>
+        <div class="buttons">
+            <button class="records-btn btn">Records</button>
+            <button class="levels-btn btn">Levels</button>
+        </div>
+        <button class="mode-btn btn">Game Modes</button>
+        <footer class="footer">
+            <div>
+                <div>
+                    <a href="https://github.com/VladKhurs/" class="link">Github: VladKhurs</a>
+                </div>
+                <div>2023</div>
+            </div>
+            <!--   <div><a href="https://rs.school/js-stage0/" class="footer-img"><img src="./assets/img/rs_school_js.svg" alt="" width="60"></a></div>   -->
+        </footer>
+        
+    </div>
+
+    <div class="replay-menu hide">
+        <div class="level-play-info">
+            <div class="level-play-text">
+                Level
+            </div>
+            <div class="level-now-replay">
+                <div class="replay-level">1</div>
+            </div>
+        </div>
+        
+        <div class="level-play-info">
+            <div class="level-play-next">
+                Next levels target:
+            </div>
+            <div class="score-level">
+                1
+            </div>
+        </div>
+        
+        <div class="score-block">
+            <div class="score-info">Your score is: </div>
+            <div class="score-amount"></div>
+        </div>
+        <div class="play-wrap">
+            <button class="play-btn btn">Play!</button>
+        </div>
+        <div class="welcome-wrap">
+            <button class="play-to-welcome-btn btn">Main Page</button>
+        </div>
+    </div>
+
+    <div class="records-menu hide">
+        <div class="records-text">
+            Records table
+        </div>
+        <div class="records-table">
+            <table class="game-table first-table">
+                <tr>
+                    <td class="table-num first-num">1</td>
+                    <td class="table-record second-td first-res">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">2</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+
+                <tr>
+                    <td class="table-num">3</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">4</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">5</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+            </table>
+            <table class="game-table">
+                <tr>
+                    <td class="table-num">6</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">7</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+
+                <tr>
+                    <td class="table-num">8</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">9</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+                <tr>
+                    <td class="table-num">10</td>
+                    <td class="table-record second-td">- - -</td>
+                </tr>
+            </table>
+        </div>
+        <button class="close-table btn">Main Page</button>
+        <button class="play-again-btn btn">Play!</button>
+    </div>
+
+    <div class="levels-menu hide">
+        <div class="level-info">
+            <div class="records-text">
+                Your level is:
+            </div>
+            <div class="level-text-now">
+                1
+            </div>
+        </div>
+
+        <div class="level-play-info text-levels-table">
+            <div class="level-play-next">
+                Next levels target:
+            </div>
+            <div class="score-level-second">
+                1
+            </div>
+        </div>
+
+        <div class="levels-block">
+            <div class="level level-now">
+                <div class="level-num">
+                    1
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    2
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    3
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    4
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    5
+                </div>
+            </div>
+        </div>
+
+        <div class="levels-block">
+            <div class="level">
+                <div class="level-num">
+                    6
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    7
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    8
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    9
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    10
+                </div>
+            </div>
+        </div>
+
+        <div class="levels-block">
+            <div class="level">
+                <div class="level-num">
+                    11
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    12
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    13
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    14
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-num">
+                    15
+                </div>
+            </div>
+        </div>
+
+        <button class="levels-to-main-btn btn">
+            Main Page
+        </button>
+        <button class="levels-to-play-btn btn">
+            Play!
+        </button>
+    </div>
+
+    <div class="games-mode-menu hide">
+        <div class="modes-text">
+            Select Game Mode
+        </div>
+
+        <div class="game-modes">
+            <div class="game-modes-part">
+                <button class="game-mode-btn btn-reverce mr easy-mode">Easy</button>
+                <button class="game-mode-btn btn-reverce ml normal-mode mode-now">Normal</button>
+            </div>
+            <div class="game-modes-part">
+                <button class="game-mode-btn btn-reverce mr hard-mode">Hard</button>
+                <button class="game-mode-btn btn-reverce ml pro-mode">Pro</button>
+            </div>
+        </div>
+        <button class="modes-to-welcome btn">Main Page</button>
+        <button class="modes-to-play btn">Play!</button>
+    </div>
+</body>
+</html>
